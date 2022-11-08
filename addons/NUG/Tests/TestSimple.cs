@@ -1,4 +1,5 @@
-﻿using NUnit.Framework;
+using Godot;
+using NUnit.Framework;
 
 namespace NUG.Tests
 {

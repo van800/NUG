@@ -1,15 +1,27 @@
-<Project Sdk="Godot.NET.Sdk/3.2.3">
+<Project Sdk="Godot.NET.Sdk/4.0.0-beta.4">
   <PropertyGroup>
-    <TargetFramework>net472</TargetFramework>
-    <LangVersion>8</LangVersion>
-    <Nullable>enable</Nullable>
+    <TargetFramework>net6.0</TargetFramework>
+    <EnableDynamicLoading>true</EnableDynamicLoading>
+    <GodotUseNETFrameworkRefAssemblies>true</GodotUseNETFrameworkRefAssemblies>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <GenerateTargetFrameworkAttribute>false</GenerateTargetFrameworkAttribute>
+    <Deterministic>false</Deterministic>
   </PropertyGroup>
   <ItemGroup>
+    <None Include="**/*.tscn" />
+    <None Remove="ClassLibrary1\**" />
+    <None Include="project.godot" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.4.0" />
     <PackageReference Include="NUnit" Version="3.12.0" />
   </ItemGroup>
   <ItemGroup>
     <Content Include=".gitignore" />
     <Content Include="LICENSE" />
     <Content Include="run_all_tests.sh" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include=".godot\mono\temp\obj\Debug" />
   </ItemGroup>
 </Project>

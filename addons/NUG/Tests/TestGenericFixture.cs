@@ -1,8 +1,8 @@
-﻿using NUnit.Framework;
+using NUnit.Framework;
 
 namespace NUG.Tests
 {
-  [TestFixture(TypeArgs = new [] { typeof(Godot.Object), typeof(Godot.Reference) })]
+  [TestFixture(TypeArgs = new [] { typeof(Godot.Object), typeof(Godot.RefCounted) })]
   public class TestGenericFixture<TBase, TSub>
   {
     [Test]

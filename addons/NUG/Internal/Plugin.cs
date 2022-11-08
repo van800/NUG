@@ -3,7 +3,7 @@ using Godot;
 namespace NUG.Internal
 {
   [Tool]
-  public class Plugin : EditorPlugin
+  public partial class Plugin : EditorPlugin
   {
     public override void _EnterTree() {}
 

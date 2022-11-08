@@ -1,8 +1,8 @@
-﻿using NUnit.Framework;
+using NUnit.Framework;
 
 namespace NUG.Tests
 {
-  [TestFixture("Hello World", "ello")]
+  [TestFixture("Hello World3D", "ello")]
   public class TestFixtureArgs
   {
     private readonly string _whole;

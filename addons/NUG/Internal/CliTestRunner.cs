@@ -1,10 +1,10 @@
-﻿using System.IO;
+using System.IO;
 using System.Threading.Tasks;
 using Godot;
 
 namespace NUG.Internal
 {
-  public class CliTestRunner : SceneTree
+  public partial class CliTestRunner : SceneTree
   {
     public CliTestRunner()
     {
@@ -22,7 +22,7 @@ namespace NUG.Internal
         if (res.Exception != null)
         {
           writer.WriteLine($"❌  \u001B[31mFailed {name}\n{res.Exception.Message}\u001B[0m");
-          OS.ExitCode = 1;
+          //OS.ExitCode = 1;
           throw res.Exception;
         }
 

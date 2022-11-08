@@ -2,7 +2,7 @@ using Godot;
 
 namespace NUG.Tests
 {
-  public class Scene : Node
+  public partial class Scene : Node
   {
     public override async void _Ready()
     {
